@@ -13,5 +13,8 @@
     "gh-pages": "^5.0.0",
     "svelte": "^3.55.1",
     "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "@picocss/pico": "^1.5.6"
   }
 }
