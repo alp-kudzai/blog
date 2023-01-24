@@ -1,5 +1,8 @@
 <script>
     import "@picocss/pico/css/pico.css";
+    import { base } from "$app/paths";
+
+    
     const links = [
         ['/', 'Home'],
         ['/posts', 'Posts']
@@ -16,7 +19,7 @@
 <nav aria-label="breadcrumb" id="navbar">
     <ul>
     {#each links as [path, name]}
-        <li ><a class="nav-links" href={path}>{name}</a></li>
+        <li ><a class="nav-links" href={base+path}>{name}</a></li>
     {/each}
     </ul>
 </nav>
@@ -25,7 +28,7 @@
     <div class="socialMedia">
         {#each footer_links as [site, alt, lgo]}
             <a href={site} target="_blank" rel="noreferrer">
-                <img class="socialLogo" src={lgo} alt={alt} />
+                <img class="socialLogo" src={base+lgo} alt={alt} />
             </a>
         {/each}
         <!-- <a href="https://twitter.com/KudzaiAlpha" target="_blank" id="twitterLogo">
