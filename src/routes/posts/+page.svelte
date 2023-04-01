@@ -6,24 +6,18 @@
     const Articles = {
         "posts": {
             1: {
-                1: "My Mission",
-                2: "A quick run through my journey and my goals",
-                3: "TBA",
-                4: ['/posts/first-post', './first-post']
-            },
-            2: {
-                1: "Just a Test",
-                2: "really testing over here",
-                3: "Today!",
-                4: ['/posts/testing', './testing']
+                1: "How to Build a Multithreaded Chat App in Python",
+                2: "Lessons from Lochat",
+                3: "2023-04-01",
+                4: ['/posts/lochat', './lochat']
             },
         },
-        "len": 2
+        "len": 1
     }
 </script>
 
 <main>
-    <h1 id="comingSoon">Posts Coming Soon...</h1>
+    <!-- <h1 id="comingSoon">Posts Coming Soon...</h1> -->
     {#each Object.entries(Articles["posts"]) as [k,v]}
         <article class="card">
             <h5 class="art_title"> {v[1]} </h5>
@@ -51,9 +45,9 @@
     .card {
         text-align: justify;
         width: 70%;
-        display: none;
+        /* display: none; */
     }
-    #comingSoon {
+    /* #comingSoon {
         font-family: 'Major Mono Display', cursive;
-    }
+    } */
 </style>

@@ -83,7 +83,7 @@ To handle unexpected disconnections, the server sets a timeout value for the cli
 
 In summary, the server's architecture is designed to enable simultaneous communication between multiple clients while minimizing blocking and optimizing performance.
 
-![Server in action!](/serverImg.png)
+![Server in action!](/images/serverImg.png)
 
 This code copied and tweaked from this [stackoverflow](https://stackoverflow.com/questions/23828264/how-to-make-a-simple-multithreaded-socket-server-in-python-that-remembers-client) post.
 ## The Threaded Client
@@ -151,7 +151,7 @@ There are two threads in the program. The first thread (InputThread) listens for
 
 If there is a timeout or OSError, the program will handle the exceptions appropriately. Finally, the threads are started using the start() method.
 
-![Threaded client!](/clientImg.png)
+![Threaded client!](/images/clientImg.png)
 
 Overall, this code creates a multi-threaded client that allows for simultaneous sending and receiving of data to and from the server.
 
