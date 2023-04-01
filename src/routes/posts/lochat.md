@@ -1,3 +1,6 @@
+<script>
+    import { base } from "$app/paths";
+</script>
 Introducing Lochat, a small python chat app that lets you chat with people on your local network. Lochat is multithreaded - both the server and client are capable of running multiple threads to process messages simultaneously. This means that you can receive messages and respond to them in real-time without any delays or blocking.
 
 If you're interested in building a multithreaded chat app in Python or just want to see how it's done, read on to learn more about Lochat and its unique features
@@ -83,7 +86,7 @@ To handle unexpected disconnections, the server sets a timeout value for the cli
 
 In summary, the server's architecture is designed to enable simultaneous communication between multiple clients while minimizing blocking and optimizing performance.
 
-![Server in action!](/images/serverImg.png)
+![Server in action!]({base}/images/serverImg.png)
 
 This code copied and tweaked from this [stackoverflow](https://stackoverflow.com/questions/23828264/how-to-make-a-simple-multithreaded-socket-server-in-python-that-remembers-client) post.
 ## The Threaded Client
@@ -151,10 +154,10 @@ There are two threads in the program. The first thread (InputThread) listens for
 
 If there is a timeout or OSError, the program will handle the exceptions appropriately. Finally, the threads are started using the start() method.
 
-![Threaded client!](/images/clientImg.png)
+![Threaded client!]({base}/images/clientImg.png)
 
 Overall, this code creates a multi-threaded client that allows for simultaneous sending and receiving of data to and from the server.
 
 You can download my project on my [github](https://github.com/alp-kudzai/localChat).
 
-If you spot an error or you have a suggestion please reach out on my [email](alpha.kudzai@gmail.com)
+If you spot an error or you have a suggestion please reach out on my [email]<alpha.kudzai@gmail.com>
